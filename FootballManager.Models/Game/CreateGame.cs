@@ -17,7 +17,7 @@ namespace FootballManager.Models.Game
         public int HomeTeamID { get; set; }
         [DisplayName("Away Team ID")]
         public int AwayTeamID { get; set; }
-
+        [DataType(DataType.Date)]
         [Required, DisplayName("Game Date")]
         public DateTime GameDate { get; set; }
         [Required, DisplayName("Home Team Score")]

@@ -69,7 +69,7 @@ namespace FootballManager.WebAPI.Controllers
             PlayerService playerService = new PlayerService();
             return View(playerService.GetPlayerByID(id));
         }
-        [HttpPost]
+        [HttpPost, ActionName("Delete")]
         public ActionResult DeletePlayer(int id)
         {
             if (this.ModelState.IsValid)
